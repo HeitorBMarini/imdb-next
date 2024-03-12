@@ -10,20 +10,20 @@ export default function Header() {
     <main className="flex justify-between items-center p-3 
     max-w-6xl mx-auto">
       <div className="flex gap-4">
-        <div>
+        <Link href={'/'}>
           <h1 className="  uppercase hidden sm:inline text-sm cursor-pointer hover:text-amber-500">
             Home{" "}
           </h1>
           <AiFillHome className="text-2xl sm:hidden hover:text-amber-500
           " />
-        </div>
+        </Link >
 
-        <div>
+        <Link href={'/about'}>
           <h1 className=" uppercase hidden sm:inline text-sm cursor-pointer  hover:text-amber-500">
-            About{" "}
+            About{""}
           </h1>
           <BsFillInfoCircleFill className="text-2xl sm:hidden hover:text-amber-500" />
-        </div>
+        </Link >
       </div>
       <div className="flex items-center gap-4">
         <DarkMode/>
